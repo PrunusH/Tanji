@@ -3,7 +3,8 @@
 	url = https://github.com/ArachisH/Eavesdrop.git
 [submodule "Submodules/Sulakore"]
 	path = Submodules/Sulakore
-	url = https://github.com/Elbrah/Sulakore.git
+	url = https://github.com/PrunusH/Sulakore.git
+	branch = tanji
 [submodule "Submodules/Wazzy"]
 	path = Submodules/Wazzy
 	url = https://github.com/ArachisH/Wazzy.git

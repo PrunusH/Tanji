@@ -518,7 +518,7 @@ namespace Tanji.Services
         {
             if (Master.Game.IsUnity)
             {
-                if (e.Packet.Id == Master.Out.Hello)
+                if (e.Packet.Id == Master.Out.ClientHello)
                 {
                     string nonce = string.Empty;
                     string hex = e.Packet.ReadUTF8(0);
@@ -528,7 +528,7 @@ namespace Tanji.Services
                     }
                     _nonce = Convert.FromHexString(nonce);
                 }
-                else if (e.Packet.Id == Master.Out.CompleteDhHandshake)
+                else if (e.Packet.Id == Master.Out.CompleteDiffieHandshake)
                 {
                     e.WaitUntil = _initializeStreamCiphersTask = InitializeStreamCiphersAsync();
                     IsReceiving = false;
@@ -559,7 +559,7 @@ namespace Tanji.Services
         }
         public void HandleIncoming(DataInterceptedEventArgs e)
         {
-            if (Master.Game.IsUnity && e.Packet.Id == Master.In.DhCompleteHandshake)
+            if (Master.Game.IsUnity && e.Packet.Id == Master.In.CompleteDiffieHandshake)
             {
                 e.WaitUntil = _initializeStreamCiphersTask;
             }

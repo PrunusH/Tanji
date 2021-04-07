@@ -61,6 +61,7 @@ namespace Tanji.Habbo
         }
 
         #region Message Hashing/Linking
+        public SortedDictionary<string, FlashMessage> Messages { get; private set; }
         public void GenerateMessageHashes(string hashesPath)
         {
             bool isUnmatched = false;
@@ -93,11 +94,11 @@ namespace Tanji.Habbo
 
             //FindMessageReferences();
             var collisions = new Dictionary<string, int>();
-            var messages = new Dictionary<string, FlashMessage>();
+            Messages = new SortedDictionary<string, FlashMessage>();
             foreach (FlashMessage flashMsg in _flashMsgs.Values)
             {
                 string hash = GenerateHash(flashMsg);
-                if (messages.ContainsKey(hash))
+                if (Messages.ContainsKey(hash))
                 {
                     if (!collisions.ContainsKey(hash))
                     {
@@ -106,12 +107,13 @@ namespace Tanji.Habbo
                     collisions[hash]++;
                     hash = GenerateHash(flashMsg, collisions[hash]);
                 }
-                messages.Add(hash, flashMsg);
+                Messages.Add(hash, flashMsg);
+                if (names != null && names.TryGetValue(hash, out (string name, bool unmatched) name)) flashMsg.Name = name;
             }
 
             foreach ((string hash, (string name, bool unmatched)) in names)
             {
-                if (!messages.TryGetValue(hash, out FlashMessage flashMsg)) continue;
+                if (!Messages.TryGetValue(hash, out FlashMessage flashMsg)) continue;
 
                 (flashMsg.IsOutgoing ? _outMessages : _inMessages)
                     .Add(name, new MessageInfo(flashMsg.Id, hash, flashMsg.Structure, flashMsg.MessageClass.QName.Name, flashMsg.ParserClass?.QName.Name, !unmatched));
@@ -1061,10 +1063,25 @@ namespace Tanji.Habbo
             _habboCommDemo = _habboCommManager = null;
         }
 
-        private record FlashMessage(short Id, string Structure, bool IsOutgoing, ASClass MessageClass, ASClass ParserClass, List<MessageReference> References);
+        public record FlashMessage(short Id, string Structure, bool IsOutgoing, ASClass MessageClass, ASClass ParserClass, List<MessageReference> References)
+        {
+            public (string name, bool isUnmatched) Name { get; internal set; }
+        }
 
         private static string GenerateHash(FlashMessage flashMsg, int collisionRank = 0)
         {
+            if (flashMsg.MessageClass.Instance.Constructor.Name != null)
+                return flashMsg.MessageClass.Instance.Constructor.Name;
+            else if (flashMsg.MessageClass.Instance.Traits.Count > 0)
+            {
+                foreach (var trait in flashMsg.MessageClass.Instance.Traits)
+                {
+                    string name = trait.QName.Namespace.Name;
+                    if (name != null && name.Contains(":"))
+                        return name.Split(":")[1];
+                }
+            }
+
             using var output = new MessageHasher(false);
             output.Write(flashMsg.IsOutgoing);
             if (collisionRank > 0)
@@ -1812,7 +1829,7 @@ namespace Tanji.Habbo
                 else writer(value);
             }
         }
-        private sealed class MessageReference
+        public sealed class MessageReference
         {
             public bool IsStatic { get; set; }
             public bool IsAnonymous { get; set; }

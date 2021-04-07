@@ -28,12 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.GenerateMessageHashesBtn = new Tangine.Controls.TangineButton();
             this.SuspendLayout();
+            // 
+            // GenerateMessageHashesBtn
+            // 
+            this.GenerateMessageHashesBtn.Location = new System.Drawing.Point(91, 76);
+            this.GenerateMessageHashesBtn.Name = "GenerateMessageHashesBtn";
+            this.GenerateMessageHashesBtn.Size = new System.Drawing.Size(223, 20);
+            this.GenerateMessageHashesBtn.TabIndex = 0;
+            this.GenerateMessageHashesBtn.Text = "Generate message hashes";
+            this.GenerateMessageHashesBtn.Click += new System.EventHandler(this.GenerateMessageHashesBtn_Click);
             // 
             // SettingsPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.GenerateMessageHashesBtn);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "SettingsPage";
@@ -43,5 +54,7 @@
         }
 
         #endregion
+
+        private Tangine.Controls.TangineButton GenerateMessageHashesBtn;
     }
 }
