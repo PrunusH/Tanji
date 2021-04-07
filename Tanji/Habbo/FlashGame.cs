@@ -91,7 +91,7 @@ namespace Tanji.Habbo
                 names.Add(hash, (name, isUnmatched)); // Duplicate hashes should no longer exist, so allow the exception to be thrown.
             }
 
-            FindMessageReferences();
+            //FindMessageReferences();
             var collisions = new Dictionary<string, int>();
             var messages = new Dictionary<string, FlashMessage>();
             foreach (FlashMessage flashMsg in _flashMsgs.Values)
@@ -568,12 +568,11 @@ namespace Tanji.Habbo
 
         private void LoadMessages()
         {
-            ABCFile abc = _abcFiles.Last();
+            ABCFile abc = _abcFiles[2];
             ASClass habboMessagesClass = null;
             foreach (ASClass @class in abc.Classes)
             {
                 if (@class.Traits.Count != 2 || @class.Instance.Traits.Count != 2) continue;
-                if (@class.Traits[0].Type.Name != "Map" || @class.Traits[1].Type.Name != "Map") continue;
                 if (@class.Traits[0].Kind != TraitKind.Constant || @class.Traits[1].Kind != TraitKind.Constant) continue;
 
                 habboMessagesClass = @class;
@@ -1190,6 +1189,12 @@ namespace Tanji.Habbo
                                 }
 
                                 case OPCode.GetLocal_0:
+                                {
+                                    propertyName = instance.QName;
+                                    break;
+                                }
+
+                                case OPCode.FindPropStrict:
                                 {
                                     propertyName = instance.QName;
                                     break;
