@@ -23,6 +23,9 @@ namespace Tanji.Services.Options
         static string Revision;
         private void GenerateMessageHashesBtn_Click(object sender, EventArgs e)
         {
+#if DEBUG
+            FindForm().WindowState = FormWindowState.Minimized;
+#endif
             Revision ??= "HabboAir";
             string swfPath = $"Revisions/{Revision}.swf";
             var swf = new FlashGame(swfPath);
