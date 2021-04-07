@@ -85,9 +85,9 @@
             // CustomClientTxt
             // 
             this.CustomClientTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            this.CustomClientTxt.Location = new System.Drawing.Point(6, 260);
+            this.CustomClientTxt.Location = new System.Drawing.Point(4, 260);
             this.CustomClientTxt.Name = "CustomClientTxt";
-            this.CustomClientTxt.Size = new System.Drawing.Size(355, 20);
+            this.CustomClientTxt.Size = new System.Drawing.Size(360, 20);
             this.CustomClientTxt.TabIndex = 0;
             this.CustomClientTxt.TabStop = false;
             this.CustomClientTxt.Text = "";

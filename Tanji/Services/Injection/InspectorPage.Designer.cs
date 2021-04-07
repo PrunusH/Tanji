@@ -37,7 +37,7 @@
             // 
             // SaveAsBtn
             // 
-            this.SaveAsBtn.Location = new System.Drawing.Point(303, 243);
+            this.SaveAsBtn.Location = new System.Drawing.Point(303, 246);
             this.SaveAsBtn.Name = "SaveAsBtn";
             this.SaveAsBtn.Size = new System.Drawing.Size(87, 20);
             this.SaveAsBtn.TabIndex = 0;
@@ -48,7 +48,7 @@
             // 
             this.LengthTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
             this.LengthTxt.IsReadOnly = true;
-            this.LengthTxt.Location = new System.Drawing.Point(99, 243);
+            this.LengthTxt.Location = new System.Drawing.Point(99, 246);
             this.LengthTxt.Name = "LengthTxt";
             this.LengthTxt.Size = new System.Drawing.Size(91, 20);
             this.LengthTxt.TabIndex = 2;
@@ -60,7 +60,7 @@
             // 
             this.HeaderTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
             this.HeaderTxt.IsReadOnly = true;
-            this.HeaderTxt.Location = new System.Drawing.Point(1, 243);
+            this.HeaderTxt.Location = new System.Drawing.Point(1, 246);
             this.HeaderTxt.Name = "HeaderTxt";
             this.HeaderTxt.Size = new System.Drawing.Size(91, 20);
             this.HeaderTxt.TabIndex = 3;
@@ -72,7 +72,7 @@
             // 
             this.CorruptedTxt.BackColor = System.Drawing.Color.Firebrick;
             this.CorruptedTxt.IsReadOnly = true;
-            this.CorruptedTxt.Location = new System.Drawing.Point(195, 243);
+            this.CorruptedTxt.Location = new System.Drawing.Point(195, 246);
             this.CorruptedTxt.Name = "CorruptedTxt";
             this.CorruptedTxt.Size = new System.Drawing.Size(98, 20);
             this.CorruptedTxt.TabIndex = 4;
@@ -87,7 +87,7 @@
             this.PacketTxt.Multiline = true;
             this.PacketTxt.Name = "PacketTxt";
             this.PacketTxt.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.PacketTxt.Size = new System.Drawing.Size(387, 232);
+            this.PacketTxt.Size = new System.Drawing.Size(387, 240);
             this.PacketTxt.TabIndex = 6;
             // 
             // InspectorPage

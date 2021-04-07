@@ -49,7 +49,7 @@
             // 
             this.ReplacementTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
             this.ReplacementTxt.IsReadOnly = true;
-            this.ReplacementTxt.Location = new System.Drawing.Point(1, 244);
+            this.ReplacementTxt.Location = new System.Drawing.Point(1, 247);
             this.ReplacementTxt.Name = "ReplacementTxt";
             this.ReplacementTxt.Size = new System.Drawing.Size(389, 20);
             this.ReplacementTxt.TabIndex = 0;
@@ -61,7 +61,7 @@
             // 
             this.DestinationLbl.AutoSize = true;
             this.DestinationLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DestinationLbl.Location = new System.Drawing.Point(64, 197);
+            this.DestinationLbl.Location = new System.Drawing.Point(64, 200);
             this.DestinationLbl.Name = "DestinationLbl";
             this.DestinationLbl.Size = new System.Drawing.Size(67, 15);
             this.DestinationLbl.TabIndex = 2;
@@ -73,7 +73,7 @@
             this.DestinationTxt.DropDownWidth = 66;
             this.DestinationTxt.FormattingEnabled = true;
             this.DestinationTxt.ItemHeight = 15;
-            this.DestinationTxt.Location = new System.Drawing.Point(67, 213);
+            this.DestinationTxt.Location = new System.Drawing.Point(67, 216);
             this.DestinationTxt.Name = "DestinationTxt";
             this.DestinationTxt.Size = new System.Drawing.Size(66, 23);
             this.DestinationTxt.TabIndex = 4;
@@ -82,7 +82,7 @@
             // 
             this.HeaderLbl.AutoSize = true;
             this.HeaderLbl.BackColor = System.Drawing.Color.Transparent;
-            this.HeaderLbl.Location = new System.Drawing.Point(1, 197);
+            this.HeaderLbl.Location = new System.Drawing.Point(1, 200);
             this.HeaderLbl.Name = "HeaderLbl";
             this.HeaderLbl.Size = new System.Drawing.Size(45, 15);
             this.HeaderLbl.TabIndex = 10;
@@ -90,7 +90,7 @@
             // 
             // HeaderTxt
             // 
-            this.HeaderTxt.Location = new System.Drawing.Point(4, 213);
+            this.HeaderTxt.Location = new System.Drawing.Point(4, 216);
             this.HeaderTxt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
             this.HeaderTxt.Maximum = new decimal(new int[] {
             4000,
@@ -105,7 +105,7 @@
             // RemoveBtn
             // 
             this.RemoveBtn.Enabled = false;
-            this.RemoveBtn.Location = new System.Drawing.Point(304, 213);
+            this.RemoveBtn.Location = new System.Drawing.Point(304, 216);
             this.RemoveBtn.Name = "RemoveBtn";
             this.RemoveBtn.Size = new System.Drawing.Size(86, 23);
             this.RemoveBtn.TabIndex = 13;
@@ -114,7 +114,7 @@
             // 
             // CreateBtn
             // 
-            this.CreateBtn.Location = new System.Drawing.Point(213, 213);
+            this.CreateBtn.Location = new System.Drawing.Point(213, 216);
             this.CreateBtn.Name = "CreateBtn";
             this.CreateBtn.Size = new System.Drawing.Size(84, 23);
             this.CreateBtn.TabIndex = 14;
@@ -125,7 +125,7 @@
             // 
             this.ActionLbl.AutoSize = true;
             this.ActionLbl.BackColor = System.Drawing.Color.Transparent;
-            this.ActionLbl.Location = new System.Drawing.Point(137, 197);
+            this.ActionLbl.Location = new System.Drawing.Point(137, 200);
             this.ActionLbl.Name = "ActionLbl";
             this.ActionLbl.Size = new System.Drawing.Size(42, 15);
             this.ActionLbl.TabIndex = 16;
@@ -137,7 +137,7 @@
             this.ActionTxt.DropDownWidth = 66;
             this.ActionTxt.FormattingEnabled = true;
             this.ActionTxt.ItemHeight = 15;
-            this.ActionTxt.Location = new System.Drawing.Point(140, 213);
+            this.ActionTxt.Location = new System.Drawing.Point(140, 216);
             this.ActionTxt.Name = "ActionTxt";
             this.ActionTxt.Size = new System.Drawing.Size(66, 23);
             this.ActionTxt.TabIndex = 18;
@@ -159,7 +159,7 @@
             this.FiltersVw.Name = "FiltersVw";
             this.FiltersVw.OwnerDraw = true;
             this.FiltersVw.ShowItemToolTips = true;
-            this.FiltersVw.Size = new System.Drawing.Size(387, 189);
+            this.FiltersVw.Size = new System.Drawing.Size(387, 192);
             this.FiltersVw.TabIndex = 20;
             this.FiltersVw.UseCompatibleStateImageBehavior = false;
             this.FiltersVw.View = System.Windows.Forms.View.Details;
