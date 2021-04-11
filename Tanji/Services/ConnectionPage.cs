@@ -279,7 +279,7 @@ namespace Tanji.Services
                 }
 
                 Status = PATCHING_CLIENT;
-                flash.Patch(flash.IsPostShuffle ? 4000 : 206, "127.0.0.1", Master.Config.GameListenPort);
+                flash.Patch((short)(flash.IsPostShuffle ? 4000 : 206), "127.0.0.1", Master.Config.GameListenPort);
 
                 Flazzy.CompressionKind compression = Flazzy.CompressionKind.ZLIB;
 #if DEBUG
