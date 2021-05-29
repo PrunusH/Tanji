@@ -149,6 +149,42 @@
         public ushort FurniListRemove { get; set; }
         public ushort FurniRentOrBuyoutOffer { get; set; }
         public ushort FurnitureAliases { get; set; }
+        public ushort Game2AccountGameStatus { get; set; }
+        public ushort Game2ArenaEntered { get; set; }
+        public ushort Game2EnterArena { get; set; }
+        public ushort Game2EnterArenaFailed { get; set; }
+        public ushort Game2FriendsLeaderboard { get; set; }
+        public ushort Game2FullGameStatus { get; set; }
+        public ushort Game2GameCancelled { get; set; }
+        public ushort Game2GameChatFromPlayer { get; set; }
+        public ushort Game2GameCreated { get; set; }
+        public ushort Game2GameDirectoryStatus { get; set; }
+        public ushort Game2GameEnding { get; set; }
+        public ushort Game2GameLongData { get; set; }
+        public ushort Game2GameNotFound { get; set; }
+        public ushort Game2GameRejoin { get; set; }
+        public ushort Game2GameStarted { get; set; }
+        public ushort Game2GameStatus { get; set; }
+        public ushort Game2InArenaQueue { get; set; }
+        public ushort Game2JoiningGameFailed { get; set; }
+        public ushort Game2PlayerExitedGameArena { get; set; }
+        public ushort Game2PlayerRematches { get; set; }
+        public ushort Game2StageEnding { get; set; }
+        public ushort Game2StageLoad { get; set; }
+        public ushort Game2StageRunning { get; set; }
+        public ushort Game2StageStarting { get; set; }
+        public ushort Game2StageStillLoading { get; set; }
+        public ushort Game2StartCounter { get; set; }
+        public ushort Game2StartingGameFailed { get; set; }
+        public ushort Game2StopCounter { get; set; }
+        public ushort Game2TotalGroupLeaderboard { get; set; }
+        public ushort Game2TotalLeaderboard { get; set; }
+        public ushort Game2UserBlocked { get; set; }
+        public ushort Game2UserJoinedGame { get; set; }
+        public ushort Game2UserLeftGame { get; set; }
+        public ushort Game2WeeklyFriendsLeaderboard { get; set; }
+        public ushort Game2WeeklyGroupLeaderboard { get; set; }
+        public ushort Game2WeeklyLeaderboard { get; set; }
         public ushort GamePlayerValue { get; set; }
         public ushort GenericError { get; set; }
         public ushort GetGuestRoom { get; set; }
@@ -379,6 +415,7 @@
         public ushort ShowMysteryBoxWait { get; set; }
         public ushort Sleep { get; set; }
         public ushort SlideObjectBundle { get; set; }
+        public ushort SnowWarGameTokens { get; set; }
         public ushort SpecialRoomEffect { get; set; }
         public ushort TalentLevelUp { get; set; }
         public ushort TalentTrack { get; set; }
@@ -413,6 +450,7 @@
         public ushort UserClassification { get; set; }
         public ushort UserEventCats { get; set; }
         public ushort UserFlatCats { get; set; }
+        public ushort UserGameAchievements { get; set; }
         public ushort UserNameChanged { get; set; }
         public ushort UserObject { get; set; }
         public ushort UserRemove { get; set; }
@@ -425,6 +463,10 @@
         public ushort VoucherRedeemError { get; set; }
         public ushort VoucherRedeemOk { get; set; }
         public ushort Wardrobe { get; set; }
+        public ushort WeeklyCompetitiveFriendsLeaderboard { get; set; }
+        public ushort WeeklyCompetitiveLeaderboard { get; set; }
+        public ushort WeeklyGameReward { get; set; }
+        public ushort WeeklyGameRewardWinners { get; set; }
         public ushort Whisper { get; set; }
         public ushort WiredFurniAction { get; set; }
         public ushort WiredFurniCondition { get; set; }

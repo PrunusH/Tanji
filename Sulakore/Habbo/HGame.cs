@@ -1547,7 +1547,7 @@ namespace Sulakore.Habbo
             }
             else
             {
-                Structure = GetOutgoingStructure(Class);
+                //Structure = GetOutgoingStructure(Class); TODO
             }
         }
 

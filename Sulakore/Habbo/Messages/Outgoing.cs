@@ -95,6 +95,26 @@
         public ushort ForwardToSomeRoom { get; set; }
         public ushort FriendFurniConfirmLock { get; set; }
         public ushort FriendRequestQuestComplete { get; set; }
+        public ushort Game2CheckGameDirectoryStatus { get; set; }
+        public ushort Game2ExitGame { get; set; }
+        public ushort Game2GameChat { get; set; }
+        public ushort Game2GetAccountGameStatus { get; set; }
+        public ushort Game2GetFriendsLeaderboard { get; set; }
+        public ushort Game2GetTotalGroupLeaderboard { get; set; }
+        public ushort Game2GetTotalLeaderboard { get; set; }
+        public ushort Game2GetWeeklyFriendsLeaderboard { get; set; }
+        public ushort Game2GetWeeklyGroupLeaderboard { get; set; }
+        public ushort Game2GetWeeklyLeaderboard { get; set; }
+        public ushort Game2LeaveGame { get; set; }
+        public ushort Game2LoadStageReady { get; set; }
+        public ushort Game2MakeSnowball { get; set; }
+        public ushort Game2PlayAgain { get; set; }
+        public ushort Game2QuickJoinGame { get; set; }
+        public ushort Game2RequestFullStatusUpdate { get; set; }
+        public ushort Game2SetUserMoveTarget { get; set; }
+        public ushort Game2StartSnowWar { get; set; }
+        public ushort Game2ThrowSnowballAtHuman { get; set; }
+        public ushort Game2ThrowSnowballAtPosition { get; set; }
         public ushort GetAchievements { get; set; }
         public ushort GetBadgePointLimits { get; set; }
         public ushort GetBadges { get; set; }
@@ -130,6 +150,7 @@
         public ushort GetFlatControllers { get; set; }
         public ushort GetForumsList { get; set; }
         public ushort GetForumStats { get; set; }
+        public ushort GetFriendsWeeklyCompetitiveLeaderboard { get; set; }
         public ushort GetFurnitureAliases { get; set; }
         public ushort GetGift { get; set; }
         public ushort GetGuestRoom { get; set; }
@@ -181,6 +202,7 @@
         public ushort GetSecondsUntil { get; set; }
         public ushort GetSelectedBadges { get; set; }
         public ushort GetSellablePetPalettes { get; set; }
+        public ushort GetSnowWarGameTokensOffer { get; set; }
         public ushort GetSongInfo { get; set; }
         public ushort GetSoundMachinePlayList { get; set; }
         public ushort GetSoundSettings { get; set; }
@@ -192,8 +214,12 @@
         public ushort GetUnreadForumsCount { get; set; }
         public ushort GetUserChatlog { get; set; }
         public ushort GetUserFlatCats { get; set; }
+        public ushort GetUserGameAchievements { get; set; }
         public ushort GetUserSongDisks { get; set; }
         public ushort GetWardrobe { get; set; }
+        public ushort GetWeeklyCompetitiveLeaderboard { get; set; }
+        public ushort GetWeeklyGameReward { get; set; }
+        public ushort GetWeeklyGameRewardWinners { get; set; }
         public ushort GetYoutubeDisplayStatus { get; set; }
         public ushort GiveStarGemToUser { get; set; }
         public ushort GiveSupplementToPet { get; set; }
@@ -298,6 +324,7 @@
 		public ushort PurchaseFromCatalogAsGift { get; set; }
 		public ushort PurchasePhoto { get; set; }
 		public ushort PurchaseRoomAd { get; set; }
+		public ushort PurchaseSnowWarGameTokensOffer { get; set; }
 		public ushort PurchaseTargetedOffer { get; set; }
 		public ushort PurchaseVipMembershipExtension { get; set; }
 		public ushort RateFlat { get; set; }
