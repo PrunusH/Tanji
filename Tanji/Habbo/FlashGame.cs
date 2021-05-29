@@ -625,7 +625,7 @@ namespace Tanji.Habbo
                         structure = GetIncomingStructure(parser);
                     }
                 }
-                else structure = GetOutgoingStructure(messageClass, messageClass);
+                //else structure = GetOutgoingStructure(messageClass, messageClass); TODO
 
                 var flashMsg = new FlashMessage(id, structure, isOutgoing, messageClass, parser, new List<MessageReference>());
                 if (!_flashMsgs.ContainsKey(messageClass))
